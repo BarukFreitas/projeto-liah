@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Seu Liah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="menu">
+        <img src="imagens/logo.png" class="logo">
+        <a href="#">
+            <div class="menu-burguer">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+        </a>    
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar Serviço" >
+    </div>
+    <div class="banner">
+        <img src="imagens/plano-liah.jpg" alt="" style="max-width: 100%; max-height: 100%;">
+        <p>Banner</p>
+    </div>
+
+    <span class="texto-1">
+        <p>Qual serviço gostaria de agendar?</p>
+    </span>
+
+    <div class="container">
+        <div class="container" onclick="expandirContainer('cabelo')">
+            <div class="card-1">
+                <img src="imagens/icone-cabelo.svg">
+                <p class="texto-container">Cabelo</p>
+            </div>
+            <div class="opcoes-container" id="opcoes-cabelo">
+                <p>Opções para Cabelo:</p>
+                <ul>
+                    <li>Opção 1</li>
+                    <li>Opção 2</li>
+                    <!-- Adicione outras opções conforme necessário -->
+                </ul>
+            </div>
+        </div>
+        
+        </div>
+        <div class="card-2">
+            <img src="imagens/icone-barba.svg">
+            <p class="texto-container">Barba</p>
+        </div>
+        <div class="card-3">
+            <img src="imagens/icone-cabelo-e-barba.svg">
+            <p class="texto-container">Cabelo e barba</p>
+        </div>
+        <div class="card-4">
+            <img src="imagens/icone-outros.svg">
+            <p class="texto-container">Outros</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

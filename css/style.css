@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 71px;
+    background-color: #15253F;
+}
+
+.logo {
+    width: 107px;
+    height: 71px;
+}
+
+.menu-burguer {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    float: right;
+    margin-right: 16px;
+    margin-top: 21px;
+}
+
+.barra {
+    width: 30px;
+    height: 5px;
+    background-color: #A8957C;
+    margin: 4px 0;
+}
+
+body {
+    background-color: white;
+}
+
+.banner {
+    width: 100%;
+    max-width: 1500px;
+    height: 100px; /* Ajuste o valor conforme necessário */
+    background-color: rgba(21, 37, 63, 50%);
+    border-radius: 8px;
+    margin: 16px;
+}
+
+.busca {
+    position: absolute;
+    margin-top: 10px;
+    padding-left: 8px;
+    width: 350px;
+    height: 41px;
+}
+
+.texto-1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: #15253F;
+}
+
+.container {
+    width: 280px;
+    height: 127px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.texto-container {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    display: inline-block;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+    width: 141px;
+    height: 56px;
+    background-color: #A8957C;
+    color: white;
+    margin: 15px 14px;
+    border-radius: 8px;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #dadada;
+    color: #9a9a9a;
+    font-style: italic;
+    font-weight: 300;
+    text-align: justify;
+    padding: 0 16px;
+    outline: none;
+    margin-top: 16px;
+}
+
+.search-bar .lupa {
+    position: absolute;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* Estilo para o placeholder */
+.search-bar input::placeholder {
+    color: #9a9a9a;
+    font-style: italic;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Remova as setas de incremento/descremento no input numérico */
+.search-bar input[type="number"]::-webkit-inner-spin-button,
+.search-bar input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container {
+    cursor: pointer;
+    transition: width 0.3s ease; /* Adicionado para suavizar a transição */
+}
+
+.container.expandido {
+    width: 400px; /* Ajuste conforme necessário */
+}
+
+/* Adicione esta regra ao seu arquivo de estilo CSS */
+.opcoes-container {
+    display: none;
+    transition: height 0.3s ease; /* Adiciona uma transição suave de altura */
+}
+
+.expandido .opcoes-container {
+    display: block;
+    height: auto; /* Permite que a altura se ajuste dinamicamente ao conteúdo */
+}
