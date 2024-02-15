@@ -16,10 +16,10 @@
                 <div class="barra"></div>
                 <div class="barra"></div>
             </div>
-        </a>    
+        </a>
     </header>
     <div class="search-bar">
-        <input type="text" placeholder="Buscar Serviço" >
+        <input type="text" placeholder="Buscar Serviço">
     </div>
     <div class="banner">
         <img src="imagens/plano-liah.jpg" alt="" style="max-width: 100%; max-height: 100%;">
@@ -31,33 +31,64 @@
     </span>
 
     <div class="container">
-        <div class="container" onclick="expandirContainer('cabelo')">
+        <div class="box box-cabelo" onclick="expandirBox('cabelo')">
             <div class="card-1">
                 <img src="imagens/icone-cabelo.svg">
                 <p class="texto-container">Cabelo</p>
             </div>
             <div class="opcoes-container" id="opcoes-cabelo">
-                <p>Opções para Cabelo:</p>
                 <ul>
-                    <li>Opção 1</li>
-                    <li>Opção 2</li>
-                    <!-- Adicione outras opções conforme necessário -->
+                    <li>Corte Tradicional</li>
+                    <li>Corte na Tesoura</li>
+                    <li>Degradê Navalhado</li>
+                    <li>Corte Degradê</li>
+                    <li>Undercut Feminino</li>
                 </ul>
             </div>
         </div>
-        
+
+        <div class="box box-barba" onclick="expandirBox('barba')">
+            <div class="card-2">
+                <img src="imagens/icone-barba.svg">
+                <p class="texto-container">Barba</p>
+            </div>
+            <div class="opcoes-container" id="opcoes-barba">
+                <ul>
+                    <li>Barba</li>
+                </ul>
+            </div>
         </div>
-        <div class="card-2">
-            <img src="imagens/icone-barba.svg">
-            <p class="texto-container">Barba</p>
+
+        <div class="box box-cabelo-e-barba" onclick="expandirBox('cabelo-e-barba')">
+            <div class="card-3">
+                <img src="imagens/icone-cabelo-e-barba.svg">
+                <p class="texto-container">Cabelo e barba</p>
+            </div>
+            <div class="opcoes-container" id="opcoes-cabelo-e-barba">
+                <ul>
+                    <li>Degradê Navalhado + Barba</li>
+                    <li>Degradê + Barba</li>
+                    <li>Corte na Tesoura + Barba</li>
+                    <li>Corte Tradicional + Barba</li>
+                    <li>Barba + Pezinho</li>
+                </ul>
+            </div>
         </div>
-        <div class="card-3">
-            <img src="imagens/icone-cabelo-e-barba.svg">
-            <p class="texto-container">Cabelo e barba</p>
-        </div>
-        <div class="card-4">
-            <img src="imagens/icone-outros.svg">
-            <p class="texto-container">Outros</p>
+
+        <div class="box box-outros" onclick="expandirBox('outros')">
+            <div class="card-4">
+                <img src="imagens/icone-outros.svg">
+                <p class="texto-container">Outros</p>
+            </div>
+            <div class="opcoes-container" id="opcoes-outros">
+                <ul>
+                    <li>Hidratação</li>
+                    <li>Depilação Orelha</li>
+                    <li>Sobrancelha</li>
+                    <li>Limpeza de Pele</li>
+                    <li>Botox</li>
+                </ul>
+            </div>
         </div>
     </div>
 
